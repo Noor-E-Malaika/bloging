@@ -28,7 +28,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try{
-       const {data} = await axios.post('/api/v1/user/login',
+       const {data} = await axios.post('https://personal-blog-tan-nine.vercel.app/',
          {
          email:inputs.email, 
          password:inputs.password})
